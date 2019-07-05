@@ -302,8 +302,7 @@ ul.inlinelist {
 }
 .contact-dtl {
     color: white;
-    text-align: left;
-    margin-left: 137px;
+    text-align: center;
     padding: 25px;
     line-height: 26px;
 }
@@ -337,6 +336,7 @@ input.form-fm:hover {
 .footer {
     text-align: center;
     font-size: 12px;
+    color: wheat;
 }
 .Privacy {
     color: #fed136;
