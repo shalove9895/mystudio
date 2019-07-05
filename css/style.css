@@ -19,7 +19,8 @@ body {
     font-size: 0.875rem;
     line-height: 1.333333;
     border-radius: 30px;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 .btn.common-btn:hover {
     background: rgb(249, 99, 50);
@@ -120,7 +121,7 @@ button.menu-mob {
     margin-bottom: 25px;
 }
 .banner .banner-text {
-    padding-top: 100px;
+    padding-top: 123px;
     padding-bottom: 50px;
 }
 
@@ -221,10 +222,10 @@ button.menu-mob {
     width: 225px;
     height: 225px;
     border: 7px solid rgba(0,0,0,.1);
-    border-radius: 50%!important;
+    border-radius: 50%;
 }
 ul.inlinelist {
-    margin-bottom: 0;
+    margin-bottom: 78px;
     padding-left: 0;
 }
 .inlinelist li {
@@ -288,15 +289,23 @@ ul.inlinelist {
     background-position: right;
     
 }
-/* .contact-hd {
-    color: #fff;
-    
-} */
+.contact-me {
+    color: white;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
 .contact-form {
     padding: 15px;
     height: auto;
     background-color: black;
     margin: 0 32px;
+}
+.contact-dtl {
+    color: white;
+    text-align: left;
+    margin-left: 137px;
+    padding: 25px;
+    line-height: 26px;
 }
 
 .form-fmo {
