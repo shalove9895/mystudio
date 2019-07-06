@@ -215,7 +215,6 @@ button.menu-mob {
     border-radius: 50%;
 }
 ul.inlinelist {
-    margin-bottom: 78px;
     padding-left: 0;
 }
 .inlinelist li {
@@ -256,22 +255,16 @@ ul.inlinelist {
     margin: 45px 0 50px 0;
     transition: transform 2s ease-out 0.15s;
 }
+.hor-arts img {
+    padding-bottom: 31px;
+}
 .vet-arts {
     display: none;
 }
 .vet-arts-mob {
-    display: block;
+    display: none;
 }
-.hor-arts img {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    transition: transform 2s ease-out 0.15s;
-}
-.vet-arts-mob img {
-    width: 354px;
-    height: 134px;
-    margin-bottom: 20px;
-}
+
 
 /* ******** */
 /* Contact */
@@ -281,11 +274,14 @@ ul.inlinelist {
     background-image: url(../img/bgBlogHome.jpg);
     background-repeat: no-repeat;
     background-position: right;
-    
+    padding: 75px 0 0;
+    text-align: center; 
+    margin-top: -83px;
 }
 .contact-me {
     color: white;
     margin-bottom: 50px;
+    margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 .contact-form {
