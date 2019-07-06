@@ -45,27 +45,16 @@ h2::selection {
 h2 {
     /* font-family: 'Herr Von Muellerhoff', cursive; */
     font-family: 'Marck Script', cursive; 
+    font-size: 20px;
+    margin: 10px 0 35px 0;
 }
 
 
 
 /* ******** */
 /* nav bar */
-/* ******** */
-/* 
-.navbar {
-    background-color: #212529!important;
-}
-.navbar .navbar-toggler {
-    background: #fed136;
-    border: #fed136;
-    font-size: 14px;
-    color:white;
-    text-transform: uppercase;
-}
-.navbar-toggler-icon {
-    background-size: 70%;
-} */
+/* ********/
+
 .navbar-pc {
     display: none;
 }
@@ -74,13 +63,13 @@ h2 {
 }
 .navbar-mob img {
     margin-top: -72px;
-    margin-right: 44px;
-    margin-left: 44px;
+    margin-right: 4px;
+    margin-left: 40px;
 }
 .navbar-ime img {
     margin-top: -18px;
-    margin-left: -152px;
-    margin-right: 216px;
+    margin-left: -112px;
+    margin-right: 185px;
 
 }
 button.menu-mob {
@@ -113,6 +102,7 @@ button.menu-mob {
     font-style: italic;
     line-height: 22px;
     margin-bottom: 25px;
+    margin-top: 30px;
 }
 .banner h2 {
     font-size: 50px;
@@ -266,18 +256,22 @@ ul.inlinelist {
     margin: 45px 0 50px 0;
     transition: transform 2s ease-out 0.15s;
 }
-.vet-arts img{
-    width: 554px;
-    height: 200px;
-    margin: 45px 0;
-    transition: transform 2s ease-out 0.15s;
+.vet-arts {
+    display: none;
+}
+.vet-arts-mob {
+    display: block;
 }
 .hor-arts img {
     margin-top: 30px;
     margin-bottom: 30px;
     transition: transform 2s ease-out 0.15s;
 }
-
+.vet-arts-mob img {
+    width: 354px;
+    height: 134px;
+    margin-bottom: 20px;
+}
 
 /* ******** */
 /* Contact */
@@ -449,6 +443,22 @@ input.form-fm:hover {
         height: 140px;
         font-size: 23px;
         line-height: 27px;
+    }
+
+    /* ******** */
+    /* My Works */
+    /* ******** */
+    .vet-arts {
+        display: block;
+    }
+    .vet-arts-mob {
+        display: none;
+    }
+
+    .vet-arts img{
+        width: 554px;
+        height: 200px;
+        margin: 45px 0;
     }
     /* ******** */
     /* Team-bg */
