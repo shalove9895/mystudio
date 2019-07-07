@@ -32,21 +32,22 @@ body {
     text-align: center;
 }
 p::selection {
-    background: rgb(249, 99, 50);
+    background: #e91e63;
     color: #fff;
 }
 h2::selection {
-    background: rgb(249, 99, 50);
+    background: #e91e63;
     color: #fff;
 }
 /* h2 {
     font-family: 'Open Sans', sans-serif;
 } */
-h2 {
+h2 p {
     /* font-family: 'Herr Von Muellerhoff', cursive; */
     /* font-family: 'Marck Script', cursive;  */
     font-size: 20px;
     margin: 10px 0 35px 0;
+    font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
 }
 
 
@@ -77,7 +78,13 @@ button.menu-mob {
     color: #fff;
     border: none;
 }
-
+button.menu-mob:hover {
+    background: none;
+    color: rgb(249, 99, 50);
+}
+.banner-text-mob .Welcome {
+    margin-top: 282px;
+}
 
 
 /* ******** */
@@ -102,7 +109,6 @@ button.menu-mob {
     font-style: italic;
     line-height: 22px;
     margin-bottom: 25px;
-    margin-top: 70px;
 }
 .banner h2 {
     font-size: 50px;
@@ -113,6 +119,12 @@ button.menu-mob {
 .banner .banner-text {
     padding-top: 123px;
     padding-bottom: 50px;
+}
+.banner .banner-text h3 {
+    font-size: 2.75rem;
+    font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
+    letter-spacing: 12px;
+    margin-top: 55px;
 }
 
 img.smoke-img {
@@ -175,6 +187,11 @@ img.smoke-img {
 .about-us .about h2{
     font-size: 20px;
 }
+.title {
+    margin-bottom: 4.5rem;
+    font-size: 30px;
+    margin-top: 30px;
+}
 .about-us .about img{
     position: absolute;
     left:0;
@@ -198,9 +215,11 @@ img.smoke-img {
     color: #212529;
     font-size: 24px;
     margin: 0 0 8px;
+    font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
 }
 .about-us .about .para-text {
     line-height: 1.75;
+    font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
 }
 .about-us .para-text1 {
     padding-bottom: 2rem;
@@ -222,7 +241,7 @@ img.smoke-img {
 .about-us .join {
     width: 66px;
     height: 66px;
-    background-color: #fed136;
+    background-color: #e91e63;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -230,6 +249,7 @@ img.smoke-img {
     font-size: 10px;
     line-height: 14px;
     border: 6px solid #dedede;
+    color: #fff;
 }
 .slider {
     background: #e5e5e5;
@@ -237,13 +257,14 @@ img.smoke-img {
 
 .about-img {
     position: relative;
-    margin-bottom: 35px;
+}
+    /* margin-bottom: 35px;
     max-width: 100%;
     transition: transform 2s;
 }
 .about-img:hover {
     transform: scale(1.2)
-}
+} */
 .about-img:before {
     content: '';
     position: absolute;
@@ -273,17 +294,24 @@ img.smoke-img {
 .team-headings {
     margin-bottom: 50px;
 }
-.team-members img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid rgba(0,0,0,.1);
+.project-member img {
+    width: 84%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 92px 0px rgba(0,0,0,0.18);
+    transition: all ease 0.3s;
 }
-.team-member img {
-    width: 225px;
-    height: 225px;
-    border: 7px solid rgba(0,0,0,.1);
-    border-radius: 50%;
+.project-member figure figcaption {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 40px;
+    color: #afafaf;
 }
+.project-member figure figcaption:hover {
+    color: #202020;
+}
+
+
 ul.inlinelist {
     padding-left: 0;
 }
@@ -314,17 +342,18 @@ ul.inlinelist {
     padding: 40px 0px;
     font-size: 18px;
 }
-.team-img {
+.project-member figure {
     position: relative;
+    margin-top: 50px;
     
 }
-.team-img {
+.project-member figure {
     position: relative;
     margin-bottom: 35px;
     max-width: 100%;
     transition: transform 2s;
 }
-.team-img:hover {
+.project-member figure:hover {
     transform: scale(1.2)
 }
 .team-img:before {
@@ -427,13 +456,13 @@ ul.inlinelist {
 .contact-bg{
     background-image: url(../img/bgBlogHome.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center center;
     padding: 75px 0 0;
     text-align: center; 
     margin-top: -83px;
 }
 .contact-me {
-    color: white;
+    color: #dc3545;;
     margin-bottom: 50px;
     margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -449,15 +478,6 @@ ul.inlinelist {
     bottom: 2px;
     height: 1px;
     width: 1090px;
-    background-color: #e91e63;
-}
-.contact-me:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 5px;
-    width: 55px;
     background-color: #e91e63;
 }
 .contact-form {
@@ -643,6 +663,43 @@ input.form-fm:hover {
         padding: 40px 170px;
         font-size: 20px;
     }
+
+    .scroll-btn.btn-show {
+        opacity: 1;
+        visibility: visible;
+        z-index: 999999;
+        right: 30px;
+    }
+    [class^="ti-"], [class*=" ti-"] {
+        font-family: 'themify';
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .ti-arrow-up:before {
+        content: "\e627";
+    }
+    .scroll-btn {
+        bottom: 30px;
+        color: #FFCE00;
+        font-size: 28px;
+        opacity: 0;
+        position: fixed;
+        right: 40px;
+        transition: all 0.3s ease 0s;
+        visibility: hidden;
+    }
+    a, button {
+        outline: medium none;
+        
+    }
+
+
 
 
    
