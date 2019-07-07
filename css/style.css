@@ -39,6 +39,14 @@ h2::selection {
     background: #e91e63;
     color: #fff;
 }
+h3::selection {
+    background: #e91e63;
+    color: #fff;
+}
+h1::selection {
+    background: #e91e63;
+    color: #fff;
+}
 /* h2 {
     font-family: 'Open Sans', sans-serif;
 } */
@@ -74,9 +82,11 @@ h2 p {
 
 }
 button.menu-mob {
-    background-color: #e91e63;
     color: #fff;
     border: none;
+    background: none;
+    font-size: 21px;
+    margin-top: -14px;
 }
 button.menu-mob:hover {
     background: none;
@@ -126,6 +136,12 @@ button.menu-mob:hover {
     letter-spacing: 12px;
     margin-top: 55px;
 }
+.banner .banner-text-mob h3 {
+    font-size: 2.75rem;
+    font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
+    letter-spacing: 12px;
+    margin-top: 55px;
+}
 
 img.smoke-img {
     margin-top: -187px;
@@ -144,12 +160,6 @@ img.smoke-img {
 }
 .services-img {
     position: relative;
-    margin-bottom: 35px;
-    max-width: 100%;
-    transition: transform 2s;
-}
-.services-img:hover {
-    transform: scale(1.2)
 }
 
 .services-img:before {
@@ -167,7 +177,7 @@ img.smoke-img {
     left: 0;
     bottom: 2px;
     height: 1px;
-    width: 1090px;
+    width: 100%;
     background-color: #e91e63;
 }
 
@@ -189,7 +199,7 @@ img.smoke-img {
 }
 .title {
     margin-bottom: 4.5rem;
-    font-size: 30px;
+    font-size: 27px;
     margin-top: 30px;
 }
 .about-us .about img{
@@ -280,7 +290,7 @@ img.smoke-img {
     left: 0;
     bottom: 2px;
     height: 1px;
-    width: 1090px;
+    width: 100%;
     background-color: #e91e63;
 }
 
@@ -371,7 +381,7 @@ ul.inlinelist {
     left: 0;
     bottom: 2px;
     height: 1px;
-    width: 1090px;
+    width: 100%;
     background-color: #e91e63;
 }
 .comtact-im {
@@ -428,7 +438,7 @@ ul.inlinelist {
     left: 0;
     bottom: 2px;
     height: 1px;
-    width: 1090px;
+    width: 100%;
     background-color: #e91e63;
 }
 
@@ -477,7 +487,7 @@ ul.inlinelist {
     left: 0;
     bottom: 2px;
     height: 1px;
-    width: 1090px;
+    width: 100%;
     background-color: #e91e63;
 }
 .contact-form {
@@ -670,7 +680,7 @@ input.form-fm:hover {
         z-index: 999999;
         right: 30px;
     }
-    [class^="ti-"], [class*=" ti-"] {
+    /* [class^="ti-"], [class*=" ti-"] {
         font-family: 'themify';
         speak: none;
         font-style: normal;
@@ -680,13 +690,13 @@ input.form-fm:hover {
         line-height: 1;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-    }
+    } */
     .ti-arrow-up:before {
         content: "\e627";
     }
     .scroll-btn {
         bottom: 30px;
-        color: #FFCE00;
+        color: #e91e63;
         font-size: 28px;
         opacity: 0;
         position: fixed;
@@ -694,10 +704,10 @@ input.form-fm:hover {
         transition: all 0.3s ease 0s;
         visibility: hidden;
     }
-    a, button {
-        outline: medium none;
-        
+    html {
+        scroll-behavior: smooth;
     }
+
 
 
 
