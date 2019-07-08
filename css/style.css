@@ -55,7 +55,7 @@ h2 p {
     /* font-family: 'Marck Script', cursive;  */
     font-size: 20px;
     margin: 10px 0 35px 0;
-    font-family: "Jost", "Glacial Indifference", "Montserrat", "Open Sans", sans-serif;
+    font: 600 10px/1 'Montserrat', sans-serif;
 }
 
 
