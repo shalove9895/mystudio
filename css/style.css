@@ -181,6 +181,36 @@ img.smoke-img {
     background-color: #e91e63;
 }
 
+.front {
+    transition: all 2s ease;
+    
+}
+.card h4{
+    font: 400 15px/1.65em 'Nunito Sans', sans-serif;
+    margin-top: 10px;
+}    
+
+.subheading {
+    font: 600 10px/1 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 30px 0 30px 0;
+}
+
+.card:hover .front{
+    transform: rotateY(-180deg);
+    transition: all 0.3s ease;
+    z-index:0;
+  }
+  .card:hover .back{
+    transform: rotateY(0deg);
+    transition: all 0.3s ease;
+    z-index:1;
+  }
+  /* .front{
+    z-index:1;
+  } */
 
 /* ******** */
 /* About us */
@@ -446,7 +476,7 @@ ul.inlinelist {
     width: 263px;
     height: 200px;
     margin: 45px 0 50px 0;
-    transition: transform 2s ease-out 0.15s;
+    /* transition: transform 2s ease-out 0.15s; */
 }
 .hor-arts img {
     padding-bottom: 31px;
@@ -457,6 +487,18 @@ ul.inlinelist {
 .vet-arts-mob {
     display: none;
 }
+
+.portfolio-bg {
+    /*transform moves, transition animates*/
+    -webkit-transform: rotateY(30deg);
+    -webkit-transition: -webkit-transform 0.5s ease;
+}
+.portfolio-item:hover .portfolio-bg {
+    -webkit-transform: rotateY(0deg);
+}
+
+
+
 
 
 /* ******** */
@@ -636,6 +678,7 @@ input.form-fm:hover {
         left: calc(100% + 15px);
         transform: translateX(-50%);
     }  
+    
     .about-us .about.right:after,
     .about-us .about.right img {
         right: calc(100% + 15px);
@@ -649,6 +692,8 @@ input.form-fm:hover {
         font-size: 23px;
         line-height: 27px;
     }
+
+    
 
     /* ******** */
     /* My Works */
@@ -707,6 +752,9 @@ input.form-fm:hover {
     html {
         scroll-behavior: smooth;
     }
+          
+
+    
 
 
 
