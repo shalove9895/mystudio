@@ -60,3 +60,42 @@ var Rotation = (function () {
 }());
 
 new Rotation($('.js-rotation'));
+
+
+var input1 = document.getElementById('input1');
+var input2 = document.getElementById('input2');
+var result = document.getElementById('result');
+var btns = document.querySelectorAll('.btn');''
+var inputFieldSelected = null;
+console.log('btn');
+for(var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', function() {
+    console.log('btn');
+      var value = this.innerHTML;
+
+      if(value == '+') {
+          result.value = parseInt(input1.value) + parseInt(input2.value);
+      } else if(value == '-') {
+          result.value = parseInt(input1.value) - parseInt(input2.value);
+      } else if(value == '*') {
+          result.value = parseInt(input1.value) * parseInt(input2.value);
+      } else if(value == '/') {
+          result.value = parseInt(input1.value) / parseInt(input2.value);
+
+      } else if(inputFieldSelected) {
+          if(inputFieldSelected == 'input1') {
+              input1.value += value;
+          } else if(inputFieldSelected == 'input2') {
+              input2.value += value;
+          }
+      }
+  })
+  
+}
+
+input1.addEventListener('focus', function() {
+  inputFieldSelected = 'input1';
+})
+input2.addEventListener('focus', function() {
+  inputFieldSelected = 'input2';
+})

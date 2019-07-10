@@ -208,6 +208,7 @@ img.smoke-img {
     transition: all 0.3s ease;
     z-index:1;
   }
+ 
   /* .front{
     z-index:1;
   } */
@@ -308,20 +309,26 @@ img.smoke-img {
 .about-img:before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 0px;
     bottom: 0;
     height: 5px;
-    width: 55px;
+    width: 76px;
     background-color: #e91e63;
 }
 .about-img:after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 0px;
     bottom: 2px;
     height: 1px;
     width: 100%;
     background-color: #e91e63;
+}
+img.about-im {
+    float: left;
+}
+.about-im img {
+    float: right;
 }
 
 /* ******** */
@@ -421,6 +428,45 @@ ul.inlinelist {
 
 
 /* ******** */
+/* Calculator */
+/* ******** */
+
+.calculator {
+    width: 100%;
+    background: blue;
+    margin: 50px auto;
+    padding: 6px;
+}
+.calculator .display {
+    display: flex;
+}
+.calculator .display input {
+    width: 33.33%;
+    height: 38px;
+    margin-top: 10px;
+}
+.calculator .btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+.calculator .btns .btn {
+    width: 90px;
+    height: 90px;
+    background: rgb(243, 46, 194);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.calculator .btns .btn:hover {
+    background: rgb(146, 131, 131);
+}
+
+
+
+/* ******** */
 /* My Works */
 /* ******** */
 .arts img {
@@ -428,11 +474,11 @@ ul.inlinelist {
     max-width: 100%;
     transition: transform 2s;
     overflow: hidden;
-}
+} 
 .arts img:hover {
     transform: scale(1.2)
-}
-.vet-arts img {
+} 
+/* .vet-arts img {
     position: relative;
     max-width: 100%;
     transition: transform 2s;
@@ -440,7 +486,17 @@ ul.inlinelist {
 }
 .vet-arts img:hover {
     transform: scale(1.2)
-}
+} */
+  .arts img:hover {
+    transform: rotateY(-180deg);
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+  .arts img:hover .back {
+    transform: rotateY(-0deg);
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
 
 
 
@@ -448,11 +504,11 @@ ul.inlinelist {
 .work-img {
     position: relative;
     max-width: 100%;
-    transition: transform 2s;
+    /* transition: transform 2s; */
 }
-.work-img:hover {
+/* .work-img:hover {
     transform: scale(1.2)
-}
+} */
 .work-img:before {
     content: '';
     position: absolute;
@@ -661,7 +717,7 @@ input.form-fm:hover {
     /* ******** */
     /* About us */
     /* ******** */
-
+   
     .about-us .about img {
         width: 140px;
     }
@@ -749,9 +805,9 @@ input.form-fm:hover {
         transition: all 0.3s ease 0s;
         visibility: hidden;
     }
-    html {
+    /* html {
         scroll-behavior: smooth;
-    }
+    } */
 
 
     .loader span {
