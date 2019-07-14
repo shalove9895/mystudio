@@ -97,6 +97,7 @@ button.menu-mob:hover {
 }
 
 
+
 /* ******** */
 /* nav bar */
 /* ******** */
@@ -183,12 +184,12 @@ img.smoke-img {
 
 .front {
     transition: all 2s ease;
-    
+
 }
 .card h4{
     font: 400 15px/1.65em 'Nunito Sans', sans-serif;
     margin-top: 10px;
-}    
+}
 
 .subheading {
     font: 600 10px/1 'Montserrat', sans-serif;
@@ -208,7 +209,7 @@ img.smoke-img {
     transition: all 0.3s ease;
     z-index:1;
   }
- 
+
   /* .front{
     z-index:1;
   } */
@@ -223,7 +224,7 @@ img.smoke-img {
 .about-us .about {
     padding-left: 85px;
     position: relative;
-    
+
 }
 .about-us .about h2{
     font-size: 20px;
@@ -365,7 +366,7 @@ ul.inlinelist {
 .inlinelist li {
     display: inline-block;
     padding: 6px;
-   
+
 }
 .inlinelist li a {
     font-size: 20px;
@@ -392,7 +393,7 @@ ul.inlinelist {
 .project-member figure {
     position: relative;
     margin-top: 50px;
-    
+
 }
 .project-member figure {
     position: relative;
@@ -432,7 +433,7 @@ ul.inlinelist {
 /* ******** */
 
 .calculator {
-    width: 100%;
+    width: 41%;
     background: blue;
     margin: 50px auto;
     padding: 6px;
@@ -474,10 +475,10 @@ ul.inlinelist {
     max-width: 100%;
     transition: transform 2s;
     overflow: hidden;
-} 
+}
 .arts img:hover {
     transform: scale(1.2)
-} 
+}
 /* .vet-arts img {
     position: relative;
     max-width: 100%;
@@ -566,7 +567,7 @@ ul.inlinelist {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 75px 0 0;
-    text-align: center; 
+    text-align: center;
     margin-top: -83px;
 }
 .contact-me {
@@ -606,7 +607,7 @@ ul.inlinelist {
     width: 88%;
     background-color: black;
     border: 1px solid gray;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .form-fm {
     padding: 20px 0 16px 0;
@@ -658,6 +659,23 @@ input.form-fm:hover {
 }
 .team-im {
     width: 250px;
+}
+
+
+
+#goToTopBtn {
+    padding: 20px;
+    color: #e91e63;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+#goToTopBtn.active {
+    display: block;
+}
+#goToTopBtn i.fas.fa-arrow-up {
+    font-size: 31px;
 }
 
 
@@ -717,7 +735,7 @@ input.form-fm:hover {
     /* ******** */
     /* About us */
     /* ******** */
-   
+
     .about-us .about img {
         width: 140px;
     }
@@ -727,20 +745,20 @@ input.form-fm:hover {
     .about-us .about.left {
         padding-left: 0;
         padding-right: 85px;
-        
+
     }
     .about-us .about.left:after,
     .about-us .about.left img {
         left: calc(100% + 15px);
         transform: translateX(-50%);
-    }  
-    
+    }
+
     .about-us .about.right:after,
     .about-us .about.right img {
         right: calc(100% + 15px);
         transform: translateX(50%);
         left: auto;
-    }    
+    }
     .about-us .join{
         margin: 0 auto;
         width: 140px;
@@ -749,7 +767,7 @@ input.form-fm:hover {
         line-height: 27px;
     }
 
-    
+
 
     /* ******** */
     /* My Works */
@@ -775,39 +793,6 @@ input.form-fm:hover {
         font-size: 20px;
     }
 
-    .scroll-btn.btn-show {
-        opacity: 1;
-        visibility: visible;
-        z-index: 999999;
-        right: 30px;
-    }
-    /* [class^="ti-"], [class*=" ti-"] {
-        font-family: 'themify';
-        speak: none;
-        font-style: normal;
-        font-weight: 400;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    } */
-    .ti-arrow-up:before {
-        content: "\e627";
-    }
-    .scroll-btn {
-        bottom: 30px;
-        color: #e91e63;
-        font-size: 28px;
-        opacity: 0;
-        position: fixed;
-        right: 40px;
-        transition: all 0.3s ease 0s;
-        visibility: hidden;
-    }
-    /* html {
-        scroll-behavior: smooth;
-    } */
 
 
     .loader span {
@@ -819,37 +804,37 @@ input.form-fm:hover {
         margin: 0 5px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       }
-      
+
       .loader span:nth-child(2) {
         background: #f07e6e;
       }
-      
+
       .loader span:nth-child(3) {
         background: #84cdfa;
       }
-      
+
       .loader span:nth-child(4) {
         background: #5ad1cd;
       }
-      
+
       .loader span:not(:last-child) {
         animation: animate 1.5s linear infinite;
       }
-      
+
       @keyframes animate {
         0% {
           transform: translateX(0);
         }
-      
+
         100% {
           transform: translateX(30px);
         }
       }
-      
+
       .loader span:last-child {
         animation: jump 1.5s ease-in-out infinite;
       }
-      
+
       @keyframes jump {
         0% {
           transform: translate(0, 0);
@@ -876,16 +861,15 @@ input.form-fm:hover {
           transform: translate(-120px, 0);
         }
       }
-      
-          
-
-    
 
 
 
 
 
-   
+
+
+
+
 
 
 
