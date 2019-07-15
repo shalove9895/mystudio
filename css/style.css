@@ -78,7 +78,6 @@ h2 p {
 .navbar-ime img {
     margin-top: -18px;
     margin-left: -112px;
-    margin-right: 185px;
 
 }
 button.menu-mob {
@@ -94,6 +93,55 @@ button.menu-mob:hover {
 }
 .banner-text-mob .Welcome {
     margin-top: 282px;
+}
+
+
+.nav1 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+.nav1 a {
+    display: block;
+    padding: 15px 30px;
+    font-size: 15px;
+    color:#dc3545;
+    text-decoration: none;
+}
+.nav1 a:hover {
+    color:#dc3545;
+    transition: 0.4s;
+}
+a.close {
+    position: absolute;
+    top:15px;
+    right:9px;
+    margin-left: 50px;
+}
+#contant {
+    transition: margin-left 0.7s;
+    display: contents;
+    overflow: hidden;
+    width: 100%;
+}
+header .logo-mob img {
+    width:140px;
+    padding-right: 150px;
+}
+.slide i.fa.fa-bars {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 147px;
+}
+.slide i.fa.fa-bars:hover {
+    color: rgb(249, 99, 50);
 }
 
 

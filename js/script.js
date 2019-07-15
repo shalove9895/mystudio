@@ -1,6 +1,6 @@
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+// $(function () {
+//   $('[data-toggle="tooltip"]').tooltip()
+// })
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -67,10 +67,10 @@ var input2 = document.getElementById('input2');
 var result = document.getElementById('result');
 var btns = document.querySelectorAll('.btn');''
 var inputFieldSelected = null;
-console.log('btn');
+// console.log('btn');
 for(var i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function() {
-    console.log('btn');
+    // console.log('btn');
       var value = this.innerHTML;
 
       if(value == '+') {
@@ -107,3 +107,15 @@ document.addEventListener('scroll', function() {
           document.getElementById('goToTopBtn').classList.remove('active');
       }
   })
+
+
+
+  function openSlideMenu(){
+    document.getElementById('menu').style.width ='200px';
+    document.getElementById('contant').style.marginLeft ='200px';
+  }
+  
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width ='0';
+    document.getElementById('contant').style.marginLeft ='0';
+  }
