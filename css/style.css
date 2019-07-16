@@ -479,39 +479,10 @@ ul.inlinelist {
 /* ******** */
 /* Calculator */
 /* ******** */
-
 .calculator {
-    width: 41%;
-    background: blue;
-    margin: 50px auto;
-    padding: 6px;
+    display: none;
 }
-.calculator .display {
-    display: flex;
-}
-.calculator .display input {
-    width: 33.33%;
-    height: 38px;
-    margin-top: 10px;
-}
-.calculator .btns {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-}
-.calculator .btns .btn {
-    width: 90px;
-    height: 90px;
-    background: rgb(243, 46, 194);
-    color: white;
-    border: none;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.calculator .btns .btn:hover {
-    background: rgb(146, 131, 131);
-}
+
 
 
 
@@ -839,6 +810,45 @@ input.form-fm:hover {
     .team-para {
         padding: 40px 170px;
         font-size: 20px;
+    }
+
+
+    /* ******** */
+    /* Calculator */
+    /* ******** */
+
+
+    .calculator {
+        width: 41%;
+        background: blue;
+        margin: 50px auto;
+        padding: 6px;
+    }
+    .calculator .display {
+        display: flex;
+    }
+    .calculator .display input {
+        width: 33.33%;
+        height: 38px;
+        margin-top: 10px;
+    }
+    .calculator .btns {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: wrap;
+    }
+    .calculator .btns .btn {
+        width: 90px;
+        height: 90px;
+        background: rgb(243, 46, 194);
+        color: white;
+        border: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .calculator .btns .btn:hover {
+        background: rgb(146, 131, 131);
     }
 
 
