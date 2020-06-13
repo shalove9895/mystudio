@@ -138,7 +138,7 @@ header .logo-mob img {
 .slide i.fa.fa-bars {
     color: #fff;
     font-size: 18px;
-    margin-left: 147px;
+    margin-left: 224px;
 }
 .slide i.fa.fa-bars:hover {
     color: rgb(249, 99, 50);
@@ -279,6 +279,10 @@ img.smoke-img {
 }
 .title {
     margin-bottom: 4.5rem;
+    font-size: 27px;
+    margin-top: 30px;
+}
+.titl {
     font-size: 27px;
     margin-top: 30px;
 }
@@ -587,7 +591,6 @@ ul.inlinelist {
     background-position: center center;
     padding: 75px 0 0;
     text-align: center;
-    margin-top: -83px;
 }
 .contact-me {
     color: #dc3545;;
@@ -621,27 +624,67 @@ ul.inlinelist {
     line-height: 26px;
 }
 
-.form-fmo {
-    height: 130px;
-    width: 88%;
-    background-color: black;
+#feedback {
+    width: 100%;
+    background-color: #989898;
     border: 1px solid gray;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding: 30px;
+    border-radius: 20px;
 }
-.form-fm {
+.wrap input {
     padding: 20px 0 16px 0;
-    width: 88%;
     height: fit-content;
-    background-color: black;
+    /* background-color: black; */
     border: 1px solid gray;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
 }
-textarea.form-fmo:hover {
-    color: white;
-    border: 1px solid white;
+.wrap textarea {
+    padding: 20px 0 16px 0;
+    height: fit-content;
+    /* background-color: black; */
+    border: 1px solid gray;
+    width: 90%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
 }
-input.form-fm:hover {
-    color: white;
-    border: 1px solid white;
+.wrap01 {
+    width: 90%;
+    margin: 0 auto;
+}
+.ca {
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    float: left;
+}
+.wrap01 input {
+    width: 100%;
+}
+input[type="submit"] {
+    width: 34%;
+    margin: 20px auto 0;
+    padding: 5px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background: #fff;
+    color: #dc3545;
+}
+.content-io {
+    padding-top: 100px;
 }
 
 /* ******** */
@@ -664,9 +707,10 @@ input.form-fm:hover {
     color: #fed136;
 }
 
-.footer span.copyright {
-    font-size: 90%;
+.footer-main span.copyright {
+    /* font-size: 90%; */
     line-height: 40px;
+    color: #fff;
 }
 .btn-primary {
     background-color: #fed136;
@@ -678,6 +722,12 @@ input.form-fm:hover {
 }
 .team-im {
     width: 250px;
+}
+.footer-main {
+    width: 100%;
+    background: #000;
+    text-align: center;
+    margin-top: 80px;
 }
 
 
@@ -782,7 +832,7 @@ input.form-fm:hover {
         margin: 0 auto;
         width: 140px;
         height: 140px;
-        font-size: 23px;
+        font-size: 20px;
         line-height: 27px;
     }
 
