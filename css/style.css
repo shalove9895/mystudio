@@ -708,7 +708,7 @@ input[type="submit"]:hover{
 }
 
 .footer-main span.copyright {
-    /* font-size: 90%; */
+    font-size: 90%;
     line-height: 40px;
     color: #fff;
 }
