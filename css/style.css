@@ -407,7 +407,7 @@ img.about-im {
     margin-top: 40px;
     color: #afafaf;
 }
-.project-member figure figcaption:hover {
+.project-member figure:hover figcaption {
     color: #202020;
 }
 
